@@ -1,4 +1,5 @@
 using ToDoAPI.AppDataContext;
+using ToDoAPI.Middleware;
 using ToDoAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,10 @@ builder.Services.AddSwaggerGen();
 // Add  This to in the Program.cs file
 builder.Services.Configure<DbSettings>(builder.Configuration.GetSection("DbSettings")); 
 builder.Services.AddSingleton<TodoDbContext>(); 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
+builder.Services.AddLogging();
 
 var app = builder.Build();
 
