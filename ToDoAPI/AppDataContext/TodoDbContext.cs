@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using Microsoft.Identity.Client;
 using ToDoAPI.Models;
 
 namespace ToDoAPI.AppDataContext{

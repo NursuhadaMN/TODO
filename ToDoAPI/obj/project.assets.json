@@ -4465,11 +4465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CodingTest\\TODO\\ToDoAPI\\ToDoAPI.csproj",
+      "projectUniqueName": "D:\\Programming\\TODO\\ToDoAPI\\ToDoAPI.csproj",
       "projectName": "ToDoAPI",
-      "projectPath": "D:\\CodingTest\\TODO\\ToDoAPI\\ToDoAPI.csproj",
+      "projectPath": "D:\\Programming\\TODO\\ToDoAPI\\ToDoAPI.csproj",
       "packagesPath": "C:\\Users\\nursu\\.nuget\\packages\\",
-      "outputPath": "D:\\CodingTest\\TODO\\ToDoAPI\\obj\\",
+      "outputPath": "D:\\Programming\\TODO\\ToDoAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nursu\\AppData\\Roaming\\NuGet\\NuGet.Config"
