@@ -1,4 +1,6 @@
+using TodoAPI.Services;
 using ToDoAPI.AppDataContext;
+using ToDoAPI.Interfaces;
 using ToDoAPI.Middleware;
 using ToDoAPI.Models;
 
@@ -18,6 +20,9 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
 builder.Services.AddLogging();
+
+//Custom Services
+builder.Services.AddScoped<ITodoServices, TodoServices>();
 
 var app = builder.Build();
 

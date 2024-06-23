@@ -52,7 +52,6 @@ namespace ToDoAPI.Controllers
             {
                 return StatusCode(500, new { message = "An error occurred while retrieving all Tood it posts", error = ex.Message });
 
-
             }
         }
     }
