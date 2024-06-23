@@ -12,6 +12,9 @@ namespace TodoAPI.Services
         private readonly TodoDbContext _context;
         private readonly ILogger<TodoServices> _logger;
         private readonly IMapper _mapper;
+
+        //Start method for business logic
+        //create todo item into db
         public async Task CreateTodoAsync(CreateTodoRequest request)
         {
             try
@@ -33,6 +36,7 @@ namespace TodoAPI.Services
             throw new NotImplementedException();
         }
 
+        //get all todo item from db
         public async Task<IEnumerable<Todo>> GetAllAsync()
         {
             var todo= await _context.Todos.ToListAsync();
